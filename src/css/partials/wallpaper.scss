@@ -1,0 +1,37 @@
+.wallpaper {
+	width: 100%;
+	display: flex;
+	min-height: 100vh;
+	visibility: visible;
+	//position: fixed; // TODO uncomment before production
+	top: 0;
+	left: 0;
+
+	background-color: #fff;
+	z-index: 22;
+}
+
+.wallpaper__inner {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 150px 40px;
+	border: 8px solid #231f20;
+}
+
+.wallpaper__list {
+	margin-left: 15px;
+		li {
+			font-weight: 100;
+			font-size: 16px;
+			line-height: 18px;
+		}
+}
+
+.wallpaper--out {
+	transition: all 2.1s;
+	transform: translateY(-100%);
+}
+
+

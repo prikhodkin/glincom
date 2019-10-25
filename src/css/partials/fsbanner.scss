@@ -1,0 +1,43 @@
+.fsbanner, .fsbanner > div > span {
+	/* obrigatório */
+	display:none;
+}
+div.fsbanner {
+	/* obrigatorio */
+	position:relative;
+	overflow:hidden;
+	/* opcional */
+	height: inherit;
+	color:white;
+
+
+}
+
+
+.fsbanner > div {
+	position:absolute;
+	background-size:cover;
+	cursor:pointer;
+	top:0px;
+	left:0px;
+}
+.fsbanner > div .name {
+	display:flex;
+	flex-direction: column;
+	justify-content: stretch;
+	width: 460px;
+	color: black;
+	padding-top: 50px;
+	padding-bottom: 60px;
+	align-items: stretch;
+	height: 100%;
+}
+.fsbanner > div .name.minimized {
+	/* css3 */
+	transform: rotate(-90deg);
+	transform-origin: left top 0;
+	/* pode ser necessário ajustar isso dependendo da fonte escolhida */
+	bottom: -13px;
+	left: 7px;
+}
+

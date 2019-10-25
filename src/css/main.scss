@@ -1,0 +1,80 @@
+@import "partials/normalize";
+@import "partials/list-style-none";
+@import "partials/visually-hidden";
+@import "partials/slick";
+@import "partials/cmn-toggle-switch";
+@import "partials/jquery.jscrollpane";
+@import "partials/preloader";
+@import "partials/wallpaper";
+@import "partials/header";
+@import "partials/main-menu";
+@import "partials/fsbanner";
+@import "partials/accordion";
+
+@font-face {
+  font-family: "RoadRadio";
+  font-weight: 100;
+  font-style: normal;
+  src:
+          local("RoadRadio-Thin"),
+          url("../fonts/RoadRadio-Thin.woff") format("woff")
+}
+
+@font-face {
+  font-family: "RoadRadio";
+  font-weight: 300;
+  font-style: normal;
+  src:
+      local("RoadRadio-Light"),
+      url("../fonts/RoadRadio-Light.woff") format("woff")
+}
+
+@font-face {
+  font-family: "RoadRadio";
+  font-weight: 400;
+  font-style: normal;
+  src:
+      local("RoadRadio"),
+      url("../fonts/RoadRadio.woff") format("woff")
+}
+
+@font-face {
+  font-family: "RoadRadio";
+  font-weight: 700;
+  font-style: normal;
+  src:
+      local("RoadRadio-Bold"),
+      url("../fonts/RoadRadio-Bold.woff") format("woff")
+}
+
+@font-face {
+  font-family: "RoadRadio";
+  font-weight: 900;
+  font-style: normal;
+  src:
+      local("RoadRadio-Black"),
+      url("../fonts/RoadRadio-Black.woff") format("woff")
+}
+
+body {
+  font-family: 'RoadRadio', sans-serif;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 14px;
+  }
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
