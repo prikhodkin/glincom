@@ -26,8 +26,9 @@ function defaultAccordion() {
 
 accordionToggleItem.on('click', toggleAccordion);
 accordionDefault.on('click', defaultAccordion);
-$(function () {
-  $('.scroll-pane').jScrollPane({
-    contentWidth: 100
+
+(function ($) {
+  $(window).on("load", function () {
+    $(".scroll-pane").mCustomScrollbar({});
   });
-});
+})(jQuery);
