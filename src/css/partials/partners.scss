@@ -1,0 +1,18 @@
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  li {
+    &:hover {
+      cursor: url(../img/arrow.png), pointer;
+    }
+  }
+  img {
+
+    transition: all 0.3s;
+    &:hover {
+      filter: none;
+      transition: all 0.3s;
+    }
+  }
+}

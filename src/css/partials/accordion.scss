@@ -4,10 +4,12 @@
 	border-left: 1px solid #c8c7c7;
 	border-right: 1px solid #c8c7c7;
 	overflow: hidden;
-	margin-top: 100px;
 	text-rendering: optimizelegibility;
 	height: calc(100vh - 285px);
 	margin-bottom: 40px;
+  overflow: hidden;
+  background: white;
+
 
 		.accordion__item {
 
@@ -27,6 +29,9 @@
 	line-height: 120px;
 	justify-self: flex-start;
 	transition: all 0.3s;
+  display: block;
+  content: '';
+  min-height: 120px;
 }
 
 .accordion__inner {
@@ -37,9 +42,12 @@
 	display: flex;
 	margin: 0;
 	padding: 0;
+  position: relative;
 	overflow: hidden;
 	list-style-type: none;
 	height: 100%;
+  overflow: hidden;
+  background-color: white;
 }
 
 .accordion__item {
@@ -48,14 +56,20 @@
 	align-items: stretch;
 	padding: 0 60px;
 	cursor: pointer;
+  background-color: white;
 	height: 100%;
 	transition: all .5s ease;
 	border-right: 1px solid #c8c7c7;
 	border-left: 1px solid #c8c7c7;
+  overflow: hidden;
 	//&:not(:last-child) {
 	//	border-right: 1px solid #c8c7c7;
 	//
 	//}
+  .accordion__left {
+    background-color: white;
+    z-index: 30;
+  }
 	&:hover {
 		flex: 1.1;
 		border-color: black;
@@ -96,6 +110,7 @@
 
 		.accordion__left {
 			flex: 0;
+
 
 
 			.accordion__title {
@@ -144,6 +159,7 @@
 		.accordion__left {
 			padding: 60px;
 			border-right: 1px solid #c8c7c7;
+      min-width: 272px;
 			.accordion__title {
 				font-size: 20px;
 				transform: rotate(0);
@@ -176,8 +192,13 @@
 				p {
 					width: auto;
 					transition: all .25s .1s ease-out;
+          line-height: 19.5px;
 
 				}
+
+        a {
+          color: #0000ff;
+        }
 		}
 	}
 
@@ -207,13 +228,14 @@
 		align-items: center;
 		margin: 0;
 		position: absolute;
-		transform: scaleX(0);
+		//transform: scaleX(0);
+    transform: translateX(-200%);
 		padding: 0;
 		opacity: 0;
-		transition: all .25s .1s ease-out;
+		transition: all 1s linear;
 			p {
 				width: 0;
-				transition: all .25s .1s ease-out;
+				transition: all 1s linear;
 
 			}
 	}
@@ -249,13 +271,23 @@
 		position: relative;
 		margin: 4px;
 		&:hover {
+      //cursor: url(../img/arrow.png), pointer;
 			.accordion__team-content {
 				opacity: 1;
 				transition: all 0.3s;
 			}
+      img {
+        filter: none;
+        transition: all 0.3s;
+      }
 		}
 		img {
+      filter: grayscale(100%);
+      transition: all 0.3s;
+      &:hover {
 
+
+      }
 		}
 
 		.accordion__team-content {
@@ -288,3 +320,9 @@
 .scroll-pane-padding {
 	padding-left: 60px;
 }
+
+.accordion__content-resume {
+  max-width: 220px;
+}
+
+

@@ -6,4 +6,12 @@
 	margin-left: auto;
 	margin-right: 140px;
 	width: 130px;
+  position: relative;
+  transition: all 1.2s;
+  transform: translateY(0);
+  &--hide {
+    top: -100px;
+    transition: all 1.2s;
+    transform: translateY(-100%);
+  }
 }

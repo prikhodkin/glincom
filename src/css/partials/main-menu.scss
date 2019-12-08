@@ -1,5 +1,6 @@
 .main-menu {
 	margin-top: 30px;
+  margin-bottom: 100px;
 }
 
 .main-menu__list {
@@ -13,6 +14,13 @@
 			line-height: 19.5px;
 			transition: all 0.3s;
 		}
+  .main-menu__item {
+    &--active {
+      a {
+        font-weight: 900;
+      }
+    }
+  }
 }
 
 
@@ -24,6 +32,7 @@
 	left: 100%;
 	opacity: 0;
 	font-size: 0;
+  top: 20px;
 	z-index: -1;
 	transition: all 0.3s;
 	&::before {
@@ -65,5 +74,36 @@
 			}
 		}
 	}
+  span {
+    position: relative;
+  }
 
+  span:hover {
+    & > .submenu__list {
+      opacity: 1;
+      z-index: 10;
+      transition: all 0.3s;
+      a {
+        font-weight: 300;
+      }
+      li {
+        &:hover {
+          a {
+            font-weight: 900;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+.main-menu__list {
+  .main-menu__item {
+    display: flex;
+  }
 }

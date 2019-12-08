@@ -1,0 +1,107 @@
+/* стили блока аккордеон */
+//.accordion{
+//  width: 100%;
+//  max-width: 600px;
+//  margin: 0 auto
+//}
+
+/* секции аккордеона */
+.accordion-wrapper .accordion_item {
+  margin-bottom:1px;
+  position:relative
+}
+/* заголовки панелей аккордеона */
+.accordion-wrapper .title_block {
+  font-weight: 700;
+  font-size: 14px;
+  color: black;
+  cursor:pointer;
+  padding-left: 15px;
+  transition:all .2s;
+  margin: 10px 0;
+}
+/* переключатель панелей, положение вниз */
+.accordion-wrapper .title_block::after {
+  content:'';
+  height:5px;
+  width:5px;
+  display:block;
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  background-repeat: no-repeat;
+  background-image: url(../img/submenu_arrow.svg);
+  transition: all 0.3s;
+}
+/* активный переключатель, положение вверх */
+.accordion-wrapper .active_block .title_block::after {
+  top:4px;
+  transition: all 0.3s;
+  transform: rotate(90deg);
+}
+.accordion-wrapper .title_block:hover {
+}
+
+/* заголовок активного блока  */
+.accordion-wrapper .active_block .title_block {
+
+
+}
+/* блоки с содержанием */
+.accordion-wrapper .info {
+  display:none;
+  padding:10px 15px;
+  overflow: hidden;
+  p {
+    margin: 0;
+    line-height: 19.5px;
+  }
+}
+/* параграф внутри блоков с содержанием */
+.accordion-wrapper .info_item {
+  margin: 0;
+}
+/* картинки внутри аккордеона */
+.accordion-wrapper .info img {
+  height: auto;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+/* полноразмерная картинка */
+.large-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* миниатюра слева */
+.img-left {
+  width: 25%;
+  float:left;
+  margin:5px 15px 5px 0;
+}
+/* миниатюра справа */
+.img-right {
+  width: 25%;
+  float:right;
+  margin:5px 0 5px 15px;
+}
+
+.accordion-wrapper {
+  margin-top: 40px;
+  .vacancy__list {
+    margin-bottom: 25px;
+    li {
+      padding-left: 10px;
+      position: relative;
+      &::before {
+        content: '•';
+        width: 10px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top:4px;
+
+      }
+    }
+  }
+}

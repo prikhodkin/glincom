@@ -3,12 +3,12 @@
 	display: flex;
 	min-height: 100vh;
 	visibility: visible;
-	//position: fixed; // TODO uncomment before production
+	position: fixed; // TODO uncomment before production
 	top: 0;
 	left: 0;
 
 	background-color: #fff;
-	z-index: 22;
+	z-index: 100;
 }
 
 .wallpaper__inner {
@@ -16,16 +16,65 @@
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-	margin: 150px 40px;
+  transition-timing-function: linear;
+
 	border: 8px solid #231f20;
+  transition: all 0.3s;
+  position: relative;
+
+}
+
+.wallpaper__logo-start {
+  width: 300px;
+  height: 130px;
+  margin: auto auto;
+  transition: all 0.3s;
+  transition-timing-function: linear;
+
+  img {
+    width: 245px;
+    transition: all 0.3s;
+    transition-timing-function: linear;
+
+  }
+}
+
+.wallpaper__logo-finish {
+
+  width: calc(100% - 80px);
+  height: calc(100vh - 300px);
+  transition: all 0.7s;
+
+
+
+  img {
+    width: 435px;
+    transition: all 0.7s;
+
+
+
+  }
+}
+
+.wallpaper__img-wrapper {
+  background-color: white;
 }
 
 .wallpaper__list {
 	margin-left: 15px;
+
 		li {
-			font-weight: 100;
-			font-size: 16px;
-			line-height: 18px;
+      a {
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 18px;
+        transition: all 0.3s;
+        &:hover {
+          transition: all 0.3s;
+          font-size: 18px;
+        }
+      }
+
 		}
 }
 
@@ -35,3 +84,38 @@
 }
 
 
+.wallpaper__hide {
+  position: relative;
+  left: 0;
+  transition: all 0.7s;
+  &--show {
+    left: -92.5px;
+    transition: all 0.7s;
+    transition-timing-function: linear;
+
+  }
+}
+
+
+.wallpaper__list {
+  position: absolute;
+  top: 0;
+  left: 450px;
+  margin-left: 0;
+  transition: all 0.3s;
+
+  li {
+    transition: all 0.7s;
+    position: relative;
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+
+  .show {
+    transition: all 0.7s;
+    opacity: 1;
+    transform: translateX(0);
+    transition-timing-function: linear;
+
+  }
+}

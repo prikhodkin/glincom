@@ -53,7 +53,10 @@ y-axis
 
 .mCSB_inside > .mCSB_container{ margin-right: 30px; }
 
-.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{ margin-right: 0; } /* non-visible scrollbar */
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{
+  margin-right: 0;
+  height: inherit;
+} /* non-visible scrollbar */
 
 .mCS-dir-rtl > .mCSB_inside > .mCSB_container{ /* RTL direction/left-side scrollbar */
 	margin-right: 0;
@@ -66,7 +69,7 @@ y-axis
 	position: absolute;
 	width: 16px;
 	height: auto;
-	left: 0;
+	left: -1px;
 	top: 0;
 	right: auto;
 	bottom: 0;
@@ -364,7 +367,8 @@ yx-axis
 }
 .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
 .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
-	background-color: #fff; background-color: rgba(255,255,255,0.9);
+	//background-color: #fff; background-color: rgba(255,255,255,0.9);
+	background-color: black;
 	filter: "alpha(opacity=90)"; -ms-filter: "alpha(opacity=90)";
 }
 

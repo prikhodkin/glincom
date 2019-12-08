@@ -1,0 +1,35 @@
+.arrow {
+  position: relative;
+  &:hover {
+    img {
+      filter: none;
+    }
+  }
+  img {
+    filter: grayscale(100%);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    top: 0;
+    cursor: url(../img/arrow-left.png), pointer;
+    z-index: 10;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    cursor: url(../img/arrow-right.png), pointer;
+    z-index: 10;
+  }
+
+
+}
+
