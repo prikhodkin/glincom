@@ -1,3 +1,7 @@
+let wallpaperList = document.querySelector('.wallpaper__list');
+let menuItems = wallpaperList.querySelectorAll('li');
+let time = 500;
+
 function showMenuItem (item, delay, view) {
   $(item).on('click', function () {
     $('.wallpaper').fadeOut('slow');
@@ -9,22 +13,13 @@ function showMenuItem (item, delay, view) {
 
 $(window).on('load', () => {
 
-  setTimeout(() => { // TODO uncomment before production
+  setTimeout(() => {
     $('.wallpaper').fadeOut('slow');
   }, 20000);
 
-  setTimeout(() => { // TODO uncomment before production
+  setTimeout(() => {
     window.location.replace('/about.html');
   }, 20500);
-
-
-
-
-
-  let wallpaperList = document.querySelector('.wallpaper__list');
-  let menuItems = wallpaperList.querySelectorAll('li');
-  let time = 500;
-
 
   setTimeout(() => {
     $('.wallpaper__inner').addClass('wallpaper__logo-finish');
