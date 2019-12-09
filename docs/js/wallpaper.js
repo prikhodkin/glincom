@@ -18,7 +18,7 @@ $(window).on('load', function () {
     $('.wallpaper').fadeOut('slow');
   }, 20000);
   setTimeout(function () {
-    window.location.replace('/about.html');
+    window.location.replace('about.html');
   }, 20500);
   setTimeout(function () {
     $('.wallpaper__inner').addClass('wallpaper__logo-finish');

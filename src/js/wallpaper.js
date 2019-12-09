@@ -18,7 +18,7 @@ $(window).on('load', () => {
   }, 20000);
 
   setTimeout(() => {
-    window.location.replace('/about.html');
+    window.location.replace('about.html');
   }, 20500);
 
   setTimeout(() => {
