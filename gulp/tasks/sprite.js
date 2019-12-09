@@ -6,10 +6,10 @@ module.exports = function() {
 				preview: false,
                 cssFile: "../../../src/css/partials/_sprite.scss",
 				svg: {
-					sprite: "../../../dest/img/sprites/sprite.svg"
+					sprite: "../../../docs/img/sprites/sprite.svg"
 				}
             }))
-            .pipe($.gulp.dest("./dest/img/sprites/"))
+            .pipe($.gulp.dest("./docs/img/sprites/"))
             .pipe($.debug({"title": "sprite"}));
     });
 };

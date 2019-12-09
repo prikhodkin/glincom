@@ -5,10 +5,10 @@ module.exports = function() {
             .pipe($.sourcemaps.init())
             .pipe($.sass())
             .pipe($.autoprefixer({browsers: ["last 12 versions", "> 1%", "ie 8", "ie 7"]}))
-            .pipe($.replace("../../dest/", "../"))
+            .pipe($.replace("../../docs/", "../"))
             .pipe($.plumber.stop())
             .pipe($.sourcemaps.write("./maps/"))
-            .pipe($.gulp.dest("./dest/css/"))
+            .pipe($.gulp.dest("./docs/css/"))
             .pipe($.debug({"title": "styles"}))
             .on("end", $.browsersync.reload);
     });
