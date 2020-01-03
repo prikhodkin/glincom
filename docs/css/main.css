@@ -2742,7 +2742,10 @@ div.fsbanner {
       transition: all 0.3s; }
 
 .arrow {
-  position: relative; }
+  position: relative;
+  display: block;
+  width: 100%;
+  height: inherit; }
   .arrow:hover img {
     -webkit-filter: none;
             filter: none; }
@@ -3066,6 +3069,62 @@ div.fsbanner {
 @media (min-width: 1500px) {
   .news .scroll-pane {
     max-width: 670px; } }
+
+.projects .right h2 {
+  font-size: 30px; }
+
+.projects__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: -4px; }
+
+.projects__item {
+  margin: 4px;
+  width: calc(33% - 8px);
+  position: relative; }
+  .projects__item:hover .projects__item-content {
+    opacity: 1; }
+  .projects__item img {
+    width: 100%; }
+
+.projects__item-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0; }
+
+.projects__item-icons li {
+  width: 60px;
+  height: 60px; }
+  .projects__item-icons li:first-child {
+    margin-bottom: 5px; }
+
+.projects__item-icons img {
+  width: 100%; }
 
 @font-face {
   font-family: "RoadRadio";
