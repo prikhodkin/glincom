@@ -55,3 +55,31 @@
     width: 100%;
   }
 }
+
+.projects__select {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  padding-left: 12px;
+  margin-left: 0;
+  &::before {
+    content: '▸';
+    margin-right: 5px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    transition: all 0.3s;
+  }
+  &--active {
+    padding: 5px 15px;
+    margin-left: 12px;
+    background-color: black;
+    color: white;
+    &::before {
+      transform: rotate(90deg);
+      color: black;
+      left: -12px;
+      top: 2px;
+    }
+  }
+}

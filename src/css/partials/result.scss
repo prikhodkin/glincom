@@ -1,0 +1,38 @@
+.result__item {
+  display: flex;
+  padding: 10px 0;
+  &:not(:last-child) {
+    border-bottom: 1px solid #838181;
+  }
+}
+
+.result__content {
+  margin-left: 30px;
+}
+
+.result__title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 900;
+}
+.result__adress {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.result__price {
+  font-size: 30px;
+}
+
+.result__desc {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.result__info {
+  padding-left: 16px;
+  list-style-type: disc;
+}

@@ -20,37 +20,144 @@
 </head>
 <body>
 <div class="bg"></div>
-<header class="header">
-  <a class="header__logo header__logo--hide" href="index.html"><img src="img/logo.svg" alt="logo" width="130"></a>
-  <nav class="main-menu">
-    <ul class="main-menu__list list-style-none">
-      <li class="main-menu__item"><a href="news.html">Новости</a></li>
-      <li class="main-menu__item ">
-        <a href="about.html">Компания</a>
-        <ul class="submenu__list list-style-none">
-          <li class="submenu__item submenu__item--about"><a href="">О компании</a></li>
-          <li class="submenu__item"><a href="" >Карьера</a></li>
-          <li class="submenu__item"><a href="">Партнеры</a></li>
-        </ul>
-      </li>
-      <li class="main-menu__item">
-        <a href="">Проекты</a>
-        <ul class="submenu__list list-style-none">
-          <li class="submenu__item"><a href="">Апартаменты</a></li>
-          <li class="submenu__item"><a href="">Торговые помещения</a></li>
-          <li class="submenu__item"><a href="">Офисы</a></li>
-        </ul>
-      </li>
-      <li class="main-menu__item"><a href="">Спецпредложения</a></li>
-      <li class="main-menu__item main-menu__item--active"><a href="">Контакты</a></li>
-    </ul>
-  </nav>
-</header>
+  <header class="header">
+    <a class="header__logo header__logo--hide" href="index.html"><img src="img/logo.svg" alt="logo" width="130"></a>
+    <nav class="main-menu">
+      <ul class="main-menu__list list-style-none">
+        <li class="main-menu__item"><a href="news.html">Новости</a></li>
+        <li class="main-menu__item ">
+          <a href="about.html">Компания</a>
+          <ul class="submenu__list list-style-none">
+            <li class="submenu__item submenu__item--about"><a href="">О компании</a></li>
+            <li class="submenu__item"><a href="">Карьера</a></li>
+            <li class="submenu__item"><a href="">Партнеры</a></li>
+          </ul>
+        </li>
+        <li class="main-menu__item">
+          <a href="projects.html">Проекты</a>
+          <ul class="submenu__list list-style-none">
+            <li class="submenu__item"><a href="">Апартаменты</a></li>
+            <li class="submenu__item"><a href="">Торговые помещения</a></li>
+            <li class="submenu__item"><a href="">Офисы</a></li>
+          </ul>
+        </li>
+        <li class="main-menu__item"><a href="special.html">Спецпредложения</a></li>
+        <li class="main-menu__item main-menu__item--active"><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
 <main>
   <section class="contacts projects">
     <div class="left">
       <div class="left__inner">
-        <h1>Проекты</h1>
+        <div>
+          <h1>Проекты</h1>
+          <p class="projects__select">подобрать по параметрам</p>
+          <p><b>Продажа /</b> аренда</p>
+          <div class="filter">
+            <div class="filter__item">
+              <span class="filter__title">тип:</span>
+              <label class="filter__label">
+                <input type="radio" name="type" class="filter__input filter__input--app " checked>
+                Апартаменты
+              </label>
+              <label class="filter__label">
+                <input type="radio" name="type" class="filter__input filter__input--com">
+                коммерческая недвижимость
+              </label>
+            </div>
+            <div class="filter__block filter__block--app">
+              <div class="filter__item">
+                <span class="filter__title">проект:</span>
+                <div class="filter__wrapper">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    Апартаменты
+                  </label>
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    Апартаменты
+                  </label>
+                </div>
+              </div>
+              <div class="filter__item">
+                <span class="filter__title">тип недвижимости:</span>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__input">
+                  Апартаменты
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__input">
+                  Апартаменты
+                </label>
+              </div>
+            </div>
+            <div class="filter__block filter__block--com">
+              <div class="filter__item">
+                <span class="filter__title">проект:</span>
+                <div class="filter__wrapper">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    Апартаменты1
+                  </label>
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    Апартаменты1
+                  </label>
+                </div>
+              </div>
+              <div class="filter__item">
+                <span class="filter__title">тип недвижимости:</span>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__input">
+                  Апартаменты1
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__input">
+                  Апартаменты1
+                </label>
+              </div>
+            </div>
+            <div class="filter__item">
+              <span class="filter__title">Площадь:</span>
+
+              <div class="object-list-filter-price-wrapper">
+                <div>
+                  от
+                  <input class="object-list-filter-price-min" type="text" pattern="[0-9]" id="minCost" value="213 212">
+                  руб
+                </div>
+                <div>
+                  до
+                  <input class="object-list-filter-price-max" type="text" pattern="[0-9]" id="maxCost" value="213 212">
+                </div>
+
+              </div>
+              <div id="slider_price" class="object-list-filter__line"></div>
+
+            </div>
+            <div class="filter__item">
+              <span class="filter__title">Размер инвестиций:</span>
+              <div class="object-list-filter-price-wrapper">
+                <div>
+                  от
+                  <input class="object-list-filter-price-min" type="text" pattern="[0-9]" id="sqMin" value="213 212">
+                  руб
+                </div>
+                <div>
+                  до
+                  <input class="object-list-filter-price-max" type="text" pattern="[0-9]" id="sqMax" value="213 212">
+                </div>
+
+              </div>
+              <div id="sq" class="object-list-filter__line"></div>
+            </div>
+            <div class="filter__btns">
+              <button class="filter__btn">сбросить</button>
+              <button class="filter__btn">применить</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="scroll-pane">
@@ -58,11 +165,11 @@
         <h2>торговые помещения</h2>
         <ul class="projects__list list-style-none">
           <li class="projects__item ">
-            <a href="" class="arrow">
+            <a href="project.html" class="arrow">
               <img src="img/projects_01.jpg" alt="">
               <div class="projects__item-content">
-                <p>Скидка 7,5% 
-                    на последний стрит-ритейл 
+                <p>Скидка 7,5%
+                    на последний стрит-ритейл
                     в готовом БЦ! </p>
                 <ul class="projects__item-icons list-style-none">
                   <li><img src="img/vivaldi.jpg" alt=""></li>
@@ -72,11 +179,11 @@
             </a>
           </li>
           <li class="projects__item ">
-            <a href="" class="arrow">
+            <a href="project.html" class="arrow">
               <img src="img/projects_01.jpg" alt="">
               <div class="projects__item-content">
-                <p>Скидка 7,5% 
-                    на последний стрит-ритейл 
+                <p>Скидка 7,5%
+                    на последний стрит-ритейл
                     в готовом БЦ! </p>
                 <ul class="projects__item-icons list-style-none">
                   <li><img src="img/vivaldi.jpg" alt=""></li>
@@ -86,11 +193,11 @@
             </a>
           </li>
           <li class="projects__item ">
-            <a href="" class="arrow">
+            <a href="project.html" class="arrow">
               <img src="img/projects_01.jpg" alt="">
               <div class="projects__item-content">
-                <p>Скидка 7,5% 
-                    на последний стрит-ритейл 
+                <p>Скидка 7,5%
+                    на последний стрит-ритейл
                     в готовом БЦ! </p>
                 <ul class="projects__item-icons list-style-none">
                   <li><img src="img/vivaldi.jpg" alt=""></li>
@@ -100,11 +207,11 @@
             </a>
           </li>
           <li class="projects__item ">
-            <a href="" class="arrow">
+            <a href="project.html" class="arrow">
               <img src="img/projects_01.jpg" alt="">
               <div class="projects__item-content">
-                <p>Скидка 7,5% 
-                    на последний стрит-ритейл 
+                <p>Скидка 7,5%
+                    на последний стрит-ритейл
                     в готовом БЦ! </p>
                 <ul class="projects__item-icons list-style-none">
                   <li><img src="img/vivaldi.jpg" alt=""></li>
@@ -114,7 +221,7 @@
             </a>
           </li>
           <li class="projects__item ">
-            <a href="" class="arrow">
+            <a href="project.html" class="arrow">
               <img src="img/projects_01.jpg" alt="">
               <div class="projects__item-content">
                 <p>Скидка 7,5%
@@ -128,7 +235,7 @@
             </a>
           </li>
           <li class="projects__item ">
-            <a href="" class="arrow">
+            <a href="project.html" class="arrow">
               <img src="img/projects_01.jpg" alt="">
               <div class="projects__item-content">
                 <p>Скидка 7,5%
@@ -148,6 +255,7 @@
 </main>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.mousewheel.js"></script>
 <script src="js/jquery.jscrollpane.min.js"></script>
 <script src="js/main.js"></script>

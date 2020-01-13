@@ -12,7 +12,7 @@
     filter: grayscale(100%);
   }
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 50%;
@@ -23,7 +23,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 50%;
@@ -32,7 +32,4 @@
     cursor: url(../img/arrow-right.png), pointer;
     z-index: 10;
   }
-
-
 }
-
