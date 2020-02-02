@@ -10,14 +10,14 @@
 	width: 880px;
 		a {
 			font-size: 16px;
-			font-weight: 300;
+			font-weight: 900;
 			line-height: 19.5px;
 			transition: all 0.3s;
 		}
   .main-menu__item {
     &--active {
       a {
-        font-weight: 900;
+        color: #99948e;
       }
     }
   }
@@ -45,7 +45,8 @@
 		background-repeat: no-repeat;
 	}
 	a {
-		line-height: 19.5px;
+    line-height: 19.5px;
+    color: #000000;
 	}
 }
 
@@ -55,20 +56,23 @@
 	&:hover {
 		a {
 			font-weight: 900;
-			transition: all 0.3s;
+      transition: all 0.3s;
+      color: #99948e;
 		}
 		& > .submenu__list {
 			opacity: 1;
 			z-index: 10;
 			transition: all 0.3s;
 			a {
-				font-weight: 300;
+        font-weight: 900;
+        color: #000000;
 			}
 			li {
 				&:hover {
 					a {
 						font-weight: 900;
-						transition: all 0.3s;
+            transition: all 0.3s;
+            color: #99948e;
 					}
 				}
 			}
@@ -84,7 +88,7 @@
       z-index: 10;
       transition: all 0.3s;
       a {
-        font-weight: 300;
+        font-weight: 900;
       }
       li {
         &:hover {

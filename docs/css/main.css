@@ -2113,13 +2113,13 @@ yx-axis
   width: 880px; }
   .main-menu__list a {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 900;
     line-height: 19.5px;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
   .main-menu__list .main-menu__item--active a {
-    font-weight: 900; }
+    color: #99948e; }
 
 .submenu__list {
   position: absolute;
@@ -2142,7 +2142,8 @@ yx-axis
     margin: 10px 0;
     background-repeat: no-repeat; }
   .submenu__list a {
-    line-height: 19.5px; }
+    line-height: 19.5px;
+    color: #000000; }
 
 .main-menu__item {
   position: relative; }
@@ -2150,7 +2151,8 @@ yx-axis
     font-weight: 900;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    color: #99948e; }
   .main-menu__item:hover > .submenu__list {
     opacity: 1;
     z-index: 10;
@@ -2158,12 +2160,14 @@ yx-axis
     -o-transition: all 0.3s;
     transition: all 0.3s; }
     .main-menu__item:hover > .submenu__list a {
-      font-weight: 300; }
+      font-weight: 900;
+      color: #000000; }
     .main-menu__item:hover > .submenu__list li:hover a {
       font-weight: 900;
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      color: #99948e; }
   .main-menu__item span {
     position: relative; }
   .main-menu__item span:hover > .submenu__list {
@@ -2173,7 +2177,7 @@ yx-axis
     -o-transition: all 0.3s;
     transition: all 0.3s; }
     .main-menu__item span:hover > .submenu__list a {
-      font-weight: 300; }
+      font-weight: 900; }
     .main-menu__item span:hover > .submenu__list li:hover a {
       font-weight: 900;
       -webkit-transition: all 0.3s;
@@ -3644,11 +3648,34 @@ div.fsbanner {
     background-image: url(../img/wind.svg);
     position: absolute;
     left: 0;
-    top: 0; }
+    top: 40px; }
 
 .project .project-price-img {
   margin-left: 100px;
   width: 80%; }
+
+.project-floor {
+  margin: 20px 0; }
+  .project-floor .filter__btn {
+    background: #ffffff;
+    color: #000000; }
+    .project-floor .filter__btn:hover {
+      background: #000000;
+      color: #ffffff; }
+
+.figure {
+  fill: #ffffff;
+  stroke: #000000; }
+  .figure circle {
+    r: 20px; }
+  .figure text {
+    x: 190px; }
+  .figure:hover {
+    fill: #000000; }
+    .figure:hover text {
+      stroke: #ffffff; }
+    .figure:hover circle {
+      stroke: #ffffff; }
 
 .overlay {
   content: "";

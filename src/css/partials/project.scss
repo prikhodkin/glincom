@@ -303,7 +303,7 @@
     background-image: url(../img/wind.svg);
     position: absolute;
     left: 0;
-    top: 0;
+    top: 40px;
   }
 }
 .project {
@@ -313,3 +313,35 @@
 }
 }
 
+.project-floor {
+  margin: 20px 0;
+  .filter__btn {
+    background: #ffffff;
+    color: #000000;
+    &:hover {
+      background: #000000;
+      color: #ffffff;
+    }
+  }
+}
+
+.figure {
+  fill: #ffffff;
+  stroke: #000000;
+  circle {
+    r: 20px;
+  }
+  text {
+    x: 190px;
+  }
+  &:hover {
+    fill: #000000;
+    text {
+      stroke: #ffffff;
+
+    }
+    circle {
+      stroke: #ffffff;
+    }
+  }
+}
